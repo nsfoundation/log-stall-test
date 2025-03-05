@@ -18,6 +18,7 @@ do
 	cp output /dev/stderr
 
 done
+exit 1
 
 
 
