@@ -10,5 +10,8 @@ WORKDIR /scripts
 COPY tests.sh .
 COPY output .
 COPY long/main ./long
+
+RUN ./long/main
+
 RUN ./tests.sh 
 

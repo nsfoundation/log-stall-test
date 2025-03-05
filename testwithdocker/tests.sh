@@ -1,7 +1,5 @@
 #!/bin/bash
 
-./long/main
-
 max=30
 for (( i=0; i < max; i++ ))
 do
