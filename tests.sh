@@ -1,5 +1,7 @@
 #!/bin/bash
 
+go run long/main.go
+
 docker buildx build --build-arg "DATE=$(date)"  testwithdocker/ || exit 1
 
 max=30
