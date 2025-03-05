@@ -1,6 +1,6 @@
 #!/bin/bash
 
-go run long/main.go
+./long/main
 
 docker buildx build --build-arg "DATE=$(date)"  testwithdocker/ || exit 1
 
