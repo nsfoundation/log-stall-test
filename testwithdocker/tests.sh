@@ -1,7 +1,5 @@
 #!/bin/bash
 
-docker buildx build testwithdocker
-
 max=30
 for (( i=0; i < max; i++ ))
 do
