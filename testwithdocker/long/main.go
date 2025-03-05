@@ -32,4 +32,7 @@ func main() {
 		}
 
 		fmt.Printf("flushed a %d byte string to stderr", buf.Len())
+
+	        os.Exit(1)
+
 }
