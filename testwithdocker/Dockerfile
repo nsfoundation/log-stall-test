@@ -1,3 +1,12 @@
-FROM alpine
+FROM ubuntu
 
-RUN tests.sh
+ARG DATE
+
+RUN echo ${DATE} > date.txt
+
+RUN mkdir /scripts
+WORKDIR /scripts
+COPY tests.sh .
+COPY output .
+RUN ./tests.sh 
+

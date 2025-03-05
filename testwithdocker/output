@@ -1,0 +1,30 @@
+blublub by chunk 7.36 MiB (auxiliary name: images) 273 assets
+blublub by info 7.2 MiB [immutable] 30 assets
+blublub by path something/something 738 KiB 36 assets
+blublub by path stylesheets/ 2.79 MiB 37 assets
+blublub by path *.json 608 KiB
+  asset somepath/somepath.json 43.4 KiB [emitted] (auxiliary name: testales)
+  + 24 blublub
+blublub by path javascripts/components/ 32.3 KiB
+  asset somepath/sometpath/somepath/someotherpath 6.32 KiB [emitted] (auxiliary name: applicationz)
+  + 8 blublub
+blublub by path typeface-noto-sans/files/ 236 KiB
+  blublub by path typeface-noto-sans/files/*.woff 73 KiB 4 assets
+  blublub by path typeface-noto-sans/files/*.woff2 60.6 KiB 4 assets
+asset @iamnotsure/butthisisapath/thatcontainssomething.jpg 2.22 KiB [emitted] (auxiliary name: authorz)
+orphan modules 3.75 MiB (javascript) 42.8 KiB (runtime) [orphan] 2320 modules
+runtime modules 7.72 KiB 17 modules
+built modules 8.32 MiB (javascript) 537 KiB (css/tt6554tract) [built]
+  modules by path ./node_modules/ 4.83 MiB (javascript) 52.6 KiB (css/tt6554tract)
+    javascript modules 4.83 MiB 2050 modules
+    css modules 32.6 KiB 7 modules
+  modules by path ./app/blublub/ 3.63 MiB (javascript) 486 KiB (css/tt6554tract) 362 modules
+  modules by path ./testing/testales/tc_js/ 2.38 KiB
+    ./testing/testales/tc_js/ sync [a-z]{2}-[A-Z]+\.yml 372 bytes [built] [code generated]
+    ./testing/testales/tc_js/en-AU.yml 87 bytes [optional] [built] [code generated]
+    + 23 modules
+  ./vendor/blublub/javascripts/placeholder.js 22.3 KiB [built] [code generated]
+  fs (ignored) 23 bytes [built] [code generated]
+  path (ignored) 23 bytes [built] [code generated]
+something 2.38.0 compiled successfully in 04975 ms
+

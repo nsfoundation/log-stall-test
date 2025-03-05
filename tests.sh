@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker buildx build testwithdocker
+docker buildx build --build-arg "DATE=$(date)" --progress=plain testwithdocker/
 
 max=30
 for (( i=0; i < max; i++ ))
