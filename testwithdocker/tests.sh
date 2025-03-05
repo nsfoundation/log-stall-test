@@ -9,7 +9,7 @@ do
 	printf "\`abjkdsljfkds\` has been deprecated, please migrate to \`abjkdsljfkds\` at abjkdsljfkds(/src/node_modules/somepath:38392:35) at Something.SomethingElse (/src/node_modules/someotherpath.js:123:24)"
 	printf "\`abjkdsljfkds\` has been deprecated, please migrate to \`abjkdsljfkds\`\r at abjkdsljfkds(/src/node_modules/somepath:38392:35)\r at Something.SomethingElse (/src/node_modules/someotherpath.js:123:24)\r"
 
-	cp output /dev/stdout
+	cp output /dev/stderr
 
 done
 
