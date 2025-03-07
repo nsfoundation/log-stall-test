@@ -1,38 +1,36 @@
 package main
 
 import (
-	"bytes"
-	"fmt"
+	"time"
 	"os"
 )
 
 
 func main() {
-		var buf bytes.Buffer
-
-		for i := 0; i <= 256; i++ {
-			for j := 0; j <= 20; j++ {
-				buf.WriteByte('a')
-			}
-			buf.WriteByte('\n')
+		var buf []byte
+		for j := 0; j <= 78; j++ {
+			buf = append(buf, 'a')
 		}
 
-		_, err := fmt.Fprint(os.Stderr, buf.String())
-		if err != nil {
-			fmt.Printf("failed to flush: %v", err)
-			return
+		var allBytes []byte
+		for j := 0; j <= 255; j++ {
+			allBytes = append(allBytes, byte(j))
 		}
 
-		fmt.Printf("flushed a %d byte string to stderr", buf.Len())
-
-		_, err = fmt.Fprint(os.Stdout, buf.String())
-		if err != nil {
-			fmt.Printf("failed to flush: %v", err)
-			return
+		for i := 0; i <= 100; i++ {
+			time.Sleep(300*time.Millisecond)
+			// long line
+			os.Stdout.Write(buf)
+			os.Stdout.Write(buf)
+			os.Stdout.Write(buf)
+			os.Stdout.Write(buf)
+			os.Stdout.Write(buf)
+			os.Stdout.WriteString("\n")
+			// special line
+			os.Stdout.Write(allBytes)
+			os.Stdout.WriteString("\n")
+			// short line
+			os.Stdout.Write(buf)
+			os.Stdout.WriteString("\n")
 		}
-
-		fmt.Printf("flushed a %d byte string to stderr", buf.Len())
-
-	        os.Exit(1)
-
 }
