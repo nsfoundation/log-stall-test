@@ -13,5 +13,3 @@ COPY long/main ./long
 
 RUN ./long/main
 
-RUN ./tests.sh 
-

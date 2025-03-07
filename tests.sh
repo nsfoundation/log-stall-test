@@ -2,8 +2,6 @@
 
 ./testwithdocker/long/main
 
-docker buildx build --build-arg "DATE=$(date)"  testwithdocker/ || exit 1
-
 max=30
 for (( i=0; i < max; i++ ))
 do
@@ -16,4 +14,6 @@ do
 done
 
 
+
+docker buildx build --build-arg "DATE=$(date)" --progress=plain testwithdocker/ || exit 1
 
